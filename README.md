@@ -8,6 +8,10 @@ The application uses Streamlit for the user interface and OpenRouter to communic
 
 The chatbot supports real-time response streaming, conversation history, chat clearing, and secure API-key management.
 
+
+# Deployed in Streamlit : https://simple-chat-bot-webpage.streamlit.app/   🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+
+
 #  ✨ Features
 
 ## 🤖 AI-powered conversational chatbot
@@ -33,7 +37,8 @@ The chatbot supports real-time response streaming, conversation history, chat cl
 ## 📱 Responsive interface
 
 ## 🖥️ Application Preview
-<p align="center"> <img src="YOUR_SCREENSHOT_URL" alt="AI Assistant Screenshot" width="850"> </p>
+<p align="center">   <img width="1362" height="685" alt="chatbot output" src="https://github.com/user-attachments/assets/0de6248d-125b-4d99-86ca-b9ffc494595f" />
+" alt="AI Assistant Screenshot" width="850"> </p>
 
 Replace YOUR_SCREENSHOT_URL with the URL of your uploaded application screenshot.
 
