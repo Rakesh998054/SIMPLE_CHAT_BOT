@@ -1,6 +1,6 @@
-###  🤖 AI Assistant
-###  <p align="center"> <strong>A Simple AI Chatbot Powered by OpenRouter</strong> </p> <p align="center"> A modern, responsive, and interactive AI chatbot built using Streamlit and NVIDIA Nemotron 3 Ultra. </p>
-###  📌 About The Project
+#  🤖 AI Assistant
+#  <p align="center"> <strong>A Simple AI Chatbot Powered by OpenRouter</strong> </p> <p align="center"> A modern, responsive, and interactive AI chatbot built using Streamlit and NVIDIA Nemotron 3 Ultra. </p>
+#  📌 About The Project
 
 AI Assistant is a simple web-based chatbot application that allows users to interact with an AI model through a clean and modern chat interface.
 
@@ -8,7 +8,7 @@ The application uses Streamlit for the user interface and OpenRouter to communic
 
 The chatbot supports real-time response streaming, conversation history, chat clearing, and secure API-key management.
 
-###  ✨ Features
+#  ✨ Features
 
 ## 🤖 AI-powered conversational chatbot
 
@@ -37,7 +37,7 @@ The chatbot supports real-time response streaming, conversation history, chat cl
 
 Replace YOUR_SCREENSHOT_URL with the URL of your uploaded application screenshot.
 
-### 🧠 AI Model
+# 🧠 AI Model
 NVIDIA Nemotron 3 Ultra
 
 The application uses the NVIDIA Nemotron 3 Ultra model through OpenRouter.
@@ -48,7 +48,7 @@ nvidia/nemotron-3-ultra-550b-a55b:free
 
 OpenRouter provides the API interface used by the application to communicate with the AI model.
 
-###   🛠️ Technologies
+#   🛠️ Technologies
 Technology	Purpose
 🐍 Python	Application development
 🎈 Streamlit	Web interface
@@ -80,35 +80,35 @@ Sidebar
 
 The sidebar contains:
 
-##  ⚙️ Settings
+#  ⚙️ Settings
 
-# 🧠 Model information
+## 🧠 Model information
 
-#  🗑️ Clear Chat button
+##  🗑️ Clear Chat button
 
-#  👨‍💻 Developer information
+##  👨‍💻 Developer information
 
-#  ℹ️ Application information
+##  ℹ️ Application information
 
-#  ⚡ Streaming Responses
+##  ⚡ Streaming Responses
 
 The chatbot displays AI responses progressively as they are generated.
 
 This creates a more natural conversational experience because users do not have to wait for the complete response before seeing the beginning of the answer.
 
-###   🧠 Conversation History
+#   🧠 Conversation History
 
 The application maintains conversation history using Streamlit session state.
 
 This allows the AI model to receive previous messages as context during the current session.
 
-###  🗑️ Clear Chat
+#  🗑️ Clear Chat
 
 The Clear Chat button allows users to remove the current conversation and start a new conversation.
 
 The application restores the default AI instructions when the chat is cleared.
 
-###   🔐 API Key Security
+#   🔐 API Key Security
 
 The OpenRouter API key is stored using Streamlit Secrets.
 
@@ -120,11 +120,11 @@ The secrets file should remain local:
 
 Make sure this file is included in .gitignore.
 
-###   ⚠️ Important
+#   ⚠️ Important
 
 Never publish your real OpenRouter API key in a public repository.
 
-###  📁 Project Structure
+#  📁 Project Structure
 AI_Chatbot/
 │
 ├── app.py
@@ -136,30 +136,8 @@ AI_Chatbot/
     └── secrets.toml
 
 
-.streamlit/secrets.toml should remain private and should not be committed to GitHub.
 
-##  🚀 Installation
-1. Clone the Repository
-
-Clone the project from GitHub and open the project directory.
-
-2. Create a Virtual Environment
-
-Creating a virtual environment is recommended to keep project dependencies isolated.
-
-3. Install Dependencies
-
-Install the required Python packages listed in requirements.txt.
-
-4. Configure OpenRouter
-
-Create your Streamlit secrets configuration and add your OpenRouter API key.
-
-5. Run the Application
-
-Start the Streamlit application and open the displayed local URL in your browser.
-
-##   📦 Requirements
+#   📦 Requirements
 
 The project requires Python and the following main libraries:
 
@@ -169,7 +147,7 @@ OpenAI Python SDK
 
 The complete dependency list is available in requirements.txt.
 
-##   🔄 Application Workflow
+#   🔄 Application Workflow
 User
   ↓
 Streamlit Chat Interface
@@ -184,16 +162,17 @@ Streaming Response
   ↓
 AI Assistant
 
-##  👨‍💻 Developer
-#  Rakesh
+#  👨‍💻 Developer
 
-#  🎓 B.Tech (ISE) Student
+##  Rakesh
 
-#  🏫 NMAMIT
+##  🎓 B.Tech (ISE) Student
+
+##  🏫 NMAMIT
 
 This project was developed as an educational project for learning AI application development, API integration, and Streamlit web development.
 
-##  🔮 Future Improvements
+#  🔮 Future Improvements
 
 The project can be extended with:
 
@@ -221,13 +200,13 @@ The project can be extended with:
 
 📱 Improved mobile experience
 
-##   ⚠️ Disclaimer
+#   ⚠️ Disclaimer
 
 AI-generated responses may sometimes contain inaccurate or incomplete information.
 
 Users should independently verify important information before relying on AI-generated responses.
 
-##   📜 License
+#   📜 License
 
 This project is created for educational and personal learning purposes.
 
