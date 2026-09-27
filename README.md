@@ -1,198 +1,238 @@
-##🤖 AI Assistant
+🤖 AI Assistant
+<p align="center"> <strong>A Simple AI Chatbot Powered by OpenRouter</strong> </p> <p align="center"> A modern, responsive, and interactive AI chatbot built using Streamlit and NVIDIA Nemotron 3 Ultra. </p>
+📌 About The Project
 
-A modern AI-powered chatbot built using Streamlit and OpenRouter. The application provides a simple, clean, and interactive chat interface for communicating with an AI model.
+AI Assistant is a simple web-based chatbot application that allows users to interact with an AI model through a clean and modern chat interface.
 
-##📌 Project Overview
+The application uses Streamlit for the user interface and OpenRouter to communicate with the NVIDIA Nemotron 3 Ultra model.
 
-AI Assistant is a web-based chatbot application designed to provide AI-generated responses through a user-friendly interface.
+The chatbot supports real-time response streaming, conversation history, chat clearing, and secure API-key management.
 
-The application uses the OpenRouter API to connect with the NVIDIA Nemotron 3 Ultra model and supports real-time streaming responses.
+✨ Features
 
-##✨ Features
+🤖 AI-powered conversational chatbot
 
-#🤖 AI-powered conversational chatbot
+💬 Interactive chat interface
 
-#💬 Interactive chat interface
+⚡ Real-time streaming responses
 
-#⚡ Real-time streaming responses
+🧠 Conversation history
 
-#🧠 Conversation history during the session
+🗑️ Clear Chat functionality
 
-#🗑️ Clear Chat option
+🌙 Modern dark-themed UI
 
-#🌙 Modern dark-themed interface
+👤 User and AI avatars
 
-#🎨 Custom CSS styling
+⚙️ Sidebar settings
 
-#👤 User and AI avatars
+🔐 Secure API key configuration
 
-#⚙️ Sidebar settings panel
+❌ API error handling
 
-#🔐 Secure API key configuration using Streamlit Secrets
+📱 Responsive interface
 
-#❌ API error handling
+🖥️ Application Preview
+<p align="center"> <img src="YOUR_SCREENSHOT_URL" alt="AI Assistant Screenshot" width="850"> </p>
 
-#📱 Responsive web interface
+Replace YOUR_SCREENSHOT_URL with the URL of your uploaded application screenshot.
 
-#🧠 AI Model
+🧠 AI Model
+NVIDIA Nemotron 3 Ultra
 
-##The application uses:
+The application uses the NVIDIA Nemotron 3 Ultra model through OpenRouter.
 
-NVIDIA Nemotron 3 Ultra 550B
+Model:
 
-The model is accessed through OpenRouter, which provides an API-compatible interface for interacting with the AI model.
+nvidia/nemotron-3-ultra-550b-a55b:free
 
-##🛠️ Technologies Used
+OpenRouter provides the API interface used by the application to communicate with the AI model.
 
-Python — Application development
+🛠️ Technologies
+Technology	Purpose
+🐍 Python	Application development
+🎈 Streamlit	Web interface
+🔌 OpenAI Python SDK	API communication
+🌐 OpenRouter	AI API provider
+🧠 NVIDIA Nemotron	AI model
+🎨 HTML / CSS	UI customization
+🎨 User Interface
 
-Streamlit — Web interface
+The application provides a clean dark-themed interface.
 
-OpenAI Python SDK — API client
+Header
 
-OpenRouter — AI model API
+The main page displays:
 
-NVIDIA Nemotron 3 Ultra — AI model
+🤖 AI Assistant
 
-HTML/CSS — UI customization
+with the subtitle:
 
-##🎨 User Interface
+Powered by OpenRouter
 
-The application features a dark, modern interface with:
+Chat Area
 
-Centered AI Assistant title
+Users can send messages through the chat input and receive AI-generated responses.
 
-OpenRouter-powered subtitle
+User and assistant messages are displayed separately with custom styling and avatars.
 
-Separate user and assistant chat bubbles
+Sidebar
 
-User 👤 and AI 🤖 avatars
+The sidebar contains:
 
-Sidebar settings
+⚙️ Settings
 
-Model information
+🧠 Model information
 
-Clear Chat button
+🗑️ Clear Chat button
 
-Developer information
+👨‍💻 Developer information
 
-Chat input at the bottom
+ℹ️ Application information
 
-##⚙️ Main Components
-Chat Interface
+⚡ Streaming Responses
 
-Users can enter questions or messages through the chat input. The AI response is displayed immediately as it is generated.
+The chatbot displays AI responses progressively as they are generated.
 
+This creates a more natural conversational experience because users do not have to wait for the complete response before seeing the beginning of the answer.
+
+🧠 Conversation History
+
+The application maintains conversation history using Streamlit session state.
+
+This allows the AI model to receive previous messages as context during the current session.
+
+🗑️ Clear Chat
+
+The Clear Chat button allows users to remove the current conversation and start a new conversation.
+
+The application restores the default AI instructions when the chat is cleared.
+
+🔐 API Key Security
+
+The OpenRouter API key is stored using Streamlit Secrets.
+
+The API key should never be directly written inside the Python source code or uploaded to GitHub.
+
+The secrets file should remain local:
+
+.streamlit/secrets.toml
+
+Make sure this file is included in .gitignore.
+
+⚠️ Important
+
+Never publish your real OpenRouter API key in a public repository.
+
+📁 Project Structure
+AI_Chatbot/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+└── .streamlit/
+    └── secrets.toml
+
+
+.streamlit/secrets.toml should remain private and should not be committed to GitHub.
+
+🚀 Installation
+1. Clone the Repository
+
+Clone the project from GitHub and open the project directory.
+
+2. Create a Virtual Environment
+
+Creating a virtual environment is recommended to keep project dependencies isolated.
+
+3. Install Dependencies
+
+Install the required Python packages listed in requirements.txt.
+
+4. Configure OpenRouter
+
+Create your Streamlit secrets configuration and add your OpenRouter API key.
+
+5. Run the Application
+
+Start the Streamlit application and open the displayed local URL in your browser.
+
+📦 Requirements
+
+The project requires Python and the following main libraries:
+
+Streamlit
+
+OpenAI Python SDK
+
+The complete dependency list is available in requirements.txt.
+
+🔄 Application Workflow
+User
+  ↓
+Streamlit Chat Interface
+  ↓
 Conversation History
-
-The application maintains the conversation during the current Streamlit session, allowing the AI to use previous messages as context.
-
+  ↓
+OpenRouter API
+  ↓
+NVIDIA Nemotron 3 Ultra
+  ↓
 Streaming Response
+  ↓
+AI Assistant
 
-AI responses are streamed gradually instead of appearing all at once, providing a smoother and more interactive experience.
-
-Clear Chat
-
-The Clear Chat button removes the existing conversation and starts a fresh session with the default AI instructions.
-
-API Configuration
-
-The OpenRouter API key is stored using Streamlit Secrets rather than being directly included in the application.
-
-##🔐 Security
-
-The OpenRouter API key should be stored securely in Streamlit Secrets.
-
-Do not upload your API key to GitHub or include it directly in your source code.
-
-Make sure your secrets file is added to .gitignore.
-
-##🚀 Installation
-Prerequisites
-
-Before running the project, make sure you have:
-
-Python 3.9 or later
-
-An OpenRouter account
-
-An OpenRouter API key
-
-Setup
-
-Clone or download the project.
-
-Create a Python virtual environment.
-
-Install the required dependencies.
-
-Configure your OpenRouter API key using Streamlit Secrets.
-
-Start the Streamlit application.
-
-##▶️ Running the Application
-
-Launch the application using Streamlit.
-
-Once started, open the local Streamlit URL displayed in your terminal.
-
-The AI Assistant interface will then be available in your browser.
-
-##📁 Project Structure
-
-The project can be organized as follows:
-
-app.py — Main Streamlit application
-
-requirements.txt — Python dependencies
-
-.streamlit/secrets.toml — Private API configuration
-
-README.md — Project documentation
-
-##👨‍💻 Developer
-
+👨‍💻 Developer
 Rakesh
 
 🎓 B.Tech (ISE) Student
+
 🏫 NMAMIT
+
+This project was developed as an educational project for learning AI application development, API integration, and Streamlit web development.
 
 🔮 Future Improvements
 
-Future versions of the project could include:
+The project can be extended with:
 
 🌐 Web search
 
-📄 PDF and document support
+📄 PDF document support
 
 📎 File uploads
 
-🖼️ Image input
+🖼️ Image understanding
 
 🎙️ Voice input
 
-🔊 Voice responses
+🔊 Text-to-speech
 
-💾 Persistent conversation storage
+💾 Persistent chat history
 
 👥 User authentication
 
 🔄 Multiple AI model selection
 
-⚙️ Advanced model settings
+⚙️ Advanced model controls
 
-📊 Token and usage statistics
+📊 Token usage statistics
 
-📱 Improved mobile interface
+📱 Improved mobile experience
 
-##⚠️ Disclaimer
+⚠️ Disclaimer
 
-AI-generated responses may occasionally contain inaccurate or incomplete information. Users should verify important information independently.
+AI-generated responses may sometimes contain inaccurate or incomplete information.
 
-##📜 License
+Users should independently verify important information before relying on AI-generated responses.
+
+📜 License
 
 This project is created for educational and personal learning purposes.
 
-##⭐ AI Assistant
+⭐ Support
 
-A simple, modern, and interactive AI chatbot powered by Streamlit and OpenRouter.
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
+
+<p align="center"> <strong>🤖 AI Assistant — Simple. Interactive. Intelligent.</strong> </p>
