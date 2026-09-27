@@ -1,4 +1,4 @@
-🤖 AI Assistant
+##  🤖 AI Assistant
 <p align="center"> <strong>A Simple AI Chatbot Powered by OpenRouter</strong> </p> <p align="center"> A modern, responsive, and interactive AI chatbot built using Streamlit and NVIDIA Nemotron 3 Ultra. </p>
 📌 About The Project
 
